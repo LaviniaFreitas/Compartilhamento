@@ -1,0 +1,212 @@
+
+<!-- Estrutura básica de uma página HTML -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Primeira Página</title>
+</head>
+	
+	<!-- Tabela de cores no html -->
+	<body bgcolor="#87CEFA"> 
+	
+	<body>
+	
+		<!-- Cabeçalhos e titulos do Html -->
+		<h1>Título de nível 1</h1>
+		<h2>Título de nível 2</h2>
+		<h3>Título de nível 3</h3>
+		<h4>Título de nível 4</h4>
+		<h5>Título de nível 5</h5>
+		<h6>Título de nível 6</h6>
+		
+		<!-- Parágrafos no HTML -->
+		<p>Primeiro parágrafo do texto.</p>
+		<p>Segundo parágrafo do texto.</p>
+		<p>Terceiro parágrafo do texto.</p>
+		
+		<!-- Imagens no HTML -->
+		<img src="../imgens/praia.jpg" 
+			alt="Texto alternativo" title="Praias" height="200" width="200"/>
+		
+		<!-- Links no HTML -->
+		<p><a href="1 - pagina2.html">Página 2</a></p>
+		
+		<!-- link para um elemento na mesma página -->
+		<a href="#paragrafo3">Ir para o parágrafo 3</a>
+		 
+			
+		<!-- Tabelas no HTML -->
+		<p><table></p>
+			<tr>
+			<td>Linha 1, Coluna 1</td>
+			<td>Linha 1, Coluna 2</td>
+			</tr>
+			<tr>
+			<td>Linha 2, Coluna 1</td>
+			<td>Linha 2, Coluna 2</td>
+			</tr>
+			<tr>
+			<td>Linha 3, Coluna 1</td>
+			<td>Linha 3, Coluna 2</td>
+			</tr>
+		</table>
+		
+		
+		<!-- Tabelas com bordas no HTML -->
+		<p><table border="1" class="notas">
+			<caption>Notas de 2022/2023</caption>
+			<tr class="cabecalho">
+			<th class="cabecalho">Aluno</th>
+			<th class="cabecalho">Frequência</th>
+			<th class="cabecalho">1ª Chamada</th>
+			<th class="cabecalho">2ª Chamada</th>
+			<th class="cabecalho">Final</th>
+			</tr>
+			<tr class="valores">
+			<th class="nomes">Aluno_1</th>
+			<td class="valores">12.5</td>
+			<td class="valores">14.2</td>
+			<td class="valores"> </td>
+			<th class="final">14</td>
+			</tr>
+			<tr class="valores">
+			<th class="nomes">Aluno_2</th>
+			<td class="valores">11.5</td>
+			<td class="valores">12.2</td>
+			<td class="valores"> </td>
+			<th class="final">13</td>
+			</tr>
+			<tr class="valores">
+			<th class="nomes">Aluno_3</th>
+			<td class="valores">12.5</td>
+			<td class="valores">13.2</td>
+			<td class="valores"> </td>
+			<th class="final">13</td>
+			</tr>
+			<tr class="cabecalho">
+			<th class="cabecalho" colspan=4>Média</th>
+			<th class="cabecalho">13.3</th>
+			</tr>
+		</table>
+		
+		<!-- Tabela com cabeçalho e rodapé -->
+		<p><table></p>
+			<thead>
+				<tr>
+					<th>Produto</th>
+					<th>Preço</th>
+					<th>Quantidade</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Feijão</td>
+					<td>R$ 8,75</td>
+					<td><center>1</center></td>
+				</tr>
+				<tr>
+					<td>Arroz</td>
+					<td>R$ 4,99</td>
+					<td><center>2</center></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Total</td>
+					<td></td>
+					<td>R$ 18,73</td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		<!-- Lista ordenada no HTML -->
+		<ol>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		
+		<!-- Lista não ordenadaordenada no HTML -->
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+		
+		<!-- Lista ordenada por número romano maiúsculo no HTML -->
+		<ol type="I">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ol>
+		
+		<!-- Formulários no HTML -->
+		 <form action="salvar_dados.php" method="post">
+			<input type="text" placeholder="Digite aqui"> <br/>
+			<input type="checkbox">Checkbox <br/>
+			<input type="radio">Radio button <br/>
+			<input type="range"> <br/>
+			<input type="submit" value="Enviar">
+		</form>
+		
+		<!-- Formatação de texto no HTML -->
+		<p>Texto em negrito com <b>bold</b> e <strong>strong</strong>.</p>
+		<p>Texto em itálico com <i>italics<i> e <em>emphasis</em>.</p>
+		<p>Texto <sup>sobrescrito</sup> e <sub>subscrito</sub>.</p>
+		<p>Texto <ins>inserido</ins> e <del>excluído</del>.</p>
+		<p>Texto <small>pequeno</small> e <mark>destacado</mark>.</p>
+		
+		<!-- Formatação de áudio no HTML -->
+		<p><audio  controls src="C:\Exercicios html\1 - Exercicio de LIMA HTML\Áudio\file_example_OOG_1MG.ogg" ></P>
+			<p>Seu browser não suporta áudio.</p>
+		</audio>
+		
+		<!-- Inserindo áudio com a tag source no HTML -->
+		<p><audio controls src="C:\Exercicios html\1 - Exercicio de LIMA HTML\Áudio\beautiful-trip-142481.mp3"></p>
+			<source src="musica.ogg" type="audio/ogg">
+			<source src="musica.mp3" type="audio/mpeg">
+		</audio>
+		
+		<!-- Vídeo no HTML -->
+		<p><video src="C:\Exercicios html\1 - Exercicio de LIMA HTML\Videos\robin-21723.mp4" width="640" height="480" controls></p>
+			<p>Seu browser não suporta vídeo HTML5.</p>
+		</video>
+				
+		
+		<!--  Formatos vídeo suportados no HTML -->
+		<p><video src="C:\Exercicios html\1 - Exercicio de LIMA HTML\Videos\lobo-27400.mp4" width="640" height="480" controls></p>
+			<source src="video.webm" type="video/webm">
+			<source src="video.mp4" type="video/mp4">
+		</video>
+		
+		<!--  Div e Span no HTML -->
+		<input type="text" value="input 1">
+		<input type="text" value="input 2">
+		<div><input type="text" value="input 3"></div>
+		<div><input type="text" value="input 4"></div>
+		
+		
+		<!-- Tag não conta com nenhum atributo adicional no Html -->
+		<p>Este é um texto com um <span>
+		trecho em destaque</span>.</p>
+		<p>
+		Este é um texto com um <span
+		style="background: #1abc9c; border-radius:5px; padding:5px">
+		trecho em destaque</span>.
+		</p>
+		
+		<!-- Tag com uma aparência diferenciada via CSS no Html -->
+		<p>Este é um texto com um <span>
+		trecho em destaque</span>.</p>
+		<p>
+		Este é um texto com um <span
+		style="background: #1abc9c; border-radius:5px; padding:5px">
+		trecho em destaque</span>.
+		</p>
+		<!-- link para outros elementos -->
+		<p id="paragrafo3">Parágrafo no rodapé.</p>
+	</body>
+</html>
